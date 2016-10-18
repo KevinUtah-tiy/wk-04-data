@@ -1,0 +1,36 @@
+.header {
+  text-align: center;
+  background-color: #aaa;
+  border-radius: px;
+  padding: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+
+.table {
+  align-self: center;
+  margin: 0 auto;
+  max-height: 75%;
+  max-width: 100%;
+}
+
+th {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #aaa;
+  text-align: center;
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  border-radius: 8px;
+  padding: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

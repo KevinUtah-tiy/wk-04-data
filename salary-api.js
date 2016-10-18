@@ -12,7 +12,7 @@ window.onload = function salary () {
     dataType: "json",
     url: url,
     data: {
-      "$limit" : 10
+      "$limit" : 20
     }
   })
 

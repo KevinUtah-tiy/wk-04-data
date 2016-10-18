@@ -1,0 +1,24 @@
+a:link {
+  background-color: #aaa;
+  color: black;
+}
+
+a:visited {
+  background-color: #bbb;
+  color: red;
+}
+
+a:hover {
+  background-color: blue;
+  color: black;
+  font-size: 2.5rem;
+}
+
+a:focus {
+
+}
+
+a:active {
+  background-color: black;
+  color: white;
+}
