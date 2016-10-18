@@ -4,25 +4,25 @@
 
 var ourData = {};
 
-window.onload = function climateChange () {
+window.onload = function salary () {
 
-  let url = 'https://open.whitehouse.gov/resource/ung3-7iw4.json'
+  let url = 'https://open.whitehouse.gov/resource/9j92-xfdk.json'
 
-  // over 27,000 hits with the following
-  // $.get(url, function(data) {
-  //   console.log(data);
-  // });
-
-  // we'll do the long version to prevent overload
-  $.ajax({
+  var jQueryPromise = $.ajax({
     dataType: "json",
     url: url,
     data: {
-      "$limit" : 100
+      "$limit" : 10
     }
-  }).done(function(data) {
-    // ourData = data;
-    console.log(data);
+  })
+
+  var realPromise = Promise.resolve(jQueryPromise);
+
+  realPromise.then(function(response) {
+    console.log("gotData", response);
+    createTable(response);
+  }, function(err) {
+    console.log("err:", err);
   })
 
 };
